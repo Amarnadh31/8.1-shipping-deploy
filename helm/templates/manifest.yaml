@@ -32,7 +32,8 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
+        image: "767397679511.dkr.ecr.us-east-1.amazonaws.com/roboshop/dev/shipping:1.0"
+        # image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
